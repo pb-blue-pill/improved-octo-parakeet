@@ -112,6 +112,16 @@ Top challenges preventing digital adoption:
 ---
 
 ## 5. Optimal Cluster Analysis - 6 Persona Segments (Elbow Method)
+Used variables 
+   'generation_code',     # From categorical to ordinal
+      'is_female',          # From text to binary
+      'income_level',       # From categories to levels
+      'education_level',    # From text to ranking
+      'has_primary_physician', # Key healthcare access
+      'num_system_factors', # Aggregated from 19 columns
+      'ai_trust_score',     # Core technology attitude
+      'digital_adoption',   # Aggregated from 12+ columns
+      'geographic_type'     # Urban/suburban/rural
 
 ### Methodology: Pure Elbow Method Analysis
 
@@ -165,6 +175,65 @@ We used the elbow method to determine the optimal number of clusters:
 **What matters most**: Trust, safety, keeping control of their healthcare choices.
 
 ---
+
+  We COULD Have Segmented By:
+
+  1. Pain Points (from survey responses)
+  2. Healthcare Priorities (the 19 "Most Important Factors")
+  3. AI Benefits/Concerns (what they care about)
+  4. Digital Service Preferences (how they want to interact)
+  5. Trust Drivers (what makes them trust healthcare)
+
+  Why We Chose Demographics + Behavior Instead:
+
+  Reason 1: Stability Over Time
+  - Demographics don't change: Age, income, education stay consistent
+  - Pain points change: Today's problem might be solved tomorrow
+  - Business value: Segments that last years, not months
+
+  Reason 2: Actionability
+  - Demographics = targeting: You can find "millennial women with college degrees"
+  - Pain points = hard to target: How do you find "people worried about billing"?
+  - Marketing reality: Demographics drive ad targeting, not pain points
+
+  Reason 3: Predictive Power
+  - Demographics predict behavior: Young people adopt technology faster
+  - Pain points are symptoms: Demographics are root causes
+  - Example: Boomers resist AI because they're Boomers, not because of specific concerns
+
+  What We Actually LEFT OUT (And Why):
+
+  Healthcare Priorities (19 "Most Important Factor" columns)
+
+  Why we didn't use directly:
+  - They're binary (selected/not selected)
+  - They're correlated (selecting "quality" means not selecting "convenience")
+  - Better approach: Count how many total factors they selected
+  - Result: num_system_factors captures "how picky they are"
+
+  AI Benefits/Concerns (28 columns)
+
+  Why we didn't use directly:
+  - Too specific: "Faster diagnosis" vs "Better coordination"
+  - Redundant: People who trust AI see ALL benefits
+  - Better approach: Overall AI trust level
+  - Result: ai_trust_score captures their general AI attitude
+
+  Digital Service Preferences (12+ columns)
+
+  Why we didn't use directly:
+  - Highly correlated: People who book online also pay online
+  - Better approach: Average digital preference across all services
+  - Result: digital_adoption score captures overall digital behavior
+
+  Open-Text Responses
+
+  Why we couldn't use:
+  - Unstructured: "I want better communication" vs "Doctors should listen more"
+  - Same meaning, different words: Can't cluster text directly
+  - Would need: Natural language processing first 
+
+----
 
 ## 6. Correlation Analysis
 
