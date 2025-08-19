@@ -1,14 +1,60 @@
 {
   "Cluster_0": {
     "cluster_id": 0,
-    "size": 995,
-    "percentage": 9.7,
+    "size": 1511,
+    "percentage": 14.7,
+    "demographics": {
+      "dominant_generation": "Millennial",
+      "dominant_gender": "Female",
+      "dominant_income": "$50,000 - $99,999",
+      "dominant_education": "Graduated 4-year College/University",
+      "avg_has_children": 58.5
+    },
+    "healthcare": {
+      "has_primary_physician_pct": 100.0,
+      "dominant_health_plan": "Commercially Insured (HMO, PPO, POS, FFS)"
+    },
+    "ai_attitudes": {
+      "dominant_trust_level": "Completely"
+    },
+    "digital_adoption": {
+      "high_digital_users_pct": 19.6
+    },
+    "cluster_name": "Balanced Segment 1"
+  },
+  "Cluster_1": {
+    "cluster_id": 1,
+    "size": 1930,
+    "percentage": 18.7,
+    "demographics": {
+      "dominant_generation": "Boomer",
+      "dominant_gender": "Male",
+      "dominant_income": "Over $100,000",
+      "dominant_education": "Graduated 4-year College/University",
+      "avg_has_children": 26.2
+    },
+    "healthcare": {
+      "has_primary_physician_pct": 99.6,
+      "dominant_health_plan": "Commercially Insured (HMO, PPO, POS, FFS)"
+    },
+    "ai_attitudes": {
+      "dominant_trust_level": "Moderately"
+    },
+    "digital_adoption": {
+      "high_digital_users_pct": 6.4
+    },
+    "cluster_name": "Traditional Users"
+  },
+  "Cluster_2": {
+    "cluster_id": 2,
+    "size": 993,
+    "percentage": 9.6,
     "demographics": {
       "dominant_generation": "Boomer",
       "dominant_gender": "Female",
       "dominant_income": "$50,000 - $99,999",
       "dominant_education": "High School",
-      "avg_has_children": 19.0
+      "avg_has_children": 18.8
     },
     "healthcare": {
       "has_primary_physician_pct": 82.7,
@@ -18,43 +64,20 @@
       "dominant_trust_level": "Not at all"
     },
     "digital_adoption": {
-      "high_digital_users_pct": 18.3
+      "high_digital_users_pct": 18.2
     },
     "cluster_name": "Traditional Users"
   },
-  "Cluster_1": {
-    "cluster_id": 1,
-    "size": 2097,
-    "percentage": 20.4,
-    "demographics": {
-      "dominant_generation": "Millennial",
-      "dominant_gender": "Female",
-      "dominant_income": "Over $100,000",
-      "dominant_education": "Graduated 4-year College/University",
-      "avg_has_children": 57.0
-    },
-    "healthcare": {
-      "has_primary_physician_pct": 99.7,
-      "dominant_health_plan": "Commercially Insured (HMO, PPO, POS, FFS)"
-    },
-    "ai_attitudes": {
-      "dominant_trust_level": "Moderately"
-    },
-    "digital_adoption": {
-      "high_digital_users_pct": 17.4
-    },
-    "cluster_name": "Affluent Professionals"
-  },
-  "Cluster_2": {
-    "cluster_id": 2,
-    "size": 1650,
+  "Cluster_3": {
+    "cluster_id": 3,
+    "size": 1652,
     "percentage": 16.0,
     "demographics": {
       "dominant_generation": "Millennial",
       "dominant_gender": "Female",
       "dominant_income": "Under $25,000",
       "dominant_education": "High School",
-      "avg_has_children": 38.1
+      "avg_has_children": 38.3
     },
     "healthcare": {
       "has_primary_physician_pct": 0.0,
@@ -64,54 +87,54 @@
       "dominant_trust_level": "Moderately"
     },
     "digital_adoption": {
-      "high_digital_users_pct": 7.2
+      "high_digital_users_pct": 7.4
     },
-    "cluster_name": "Balanced Segment 3"
+    "cluster_name": "Balanced Segment 4"
   },
-  "Cluster_3": {
-    "cluster_id": 3,
-    "size": 2988,
-    "percentage": 29.0,
+  "Cluster_4": {
+    "cluster_id": 4,
+    "size": 1839,
+    "percentage": 17.8,
     "demographics": {
-      "dominant_generation": "Boomer",
+      "dominant_generation": "Millennial",
       "dominant_gender": "Female",
-      "dominant_income": "$50,000 - $99,999",
-      "dominant_education": "Graduated 4-year College/University",
-      "avg_has_children": 14.6
+      "dominant_income": "Under $25,000",
+      "dominant_education": "High School",
+      "avg_has_children": 33.4
     },
     "healthcare": {
-      "has_primary_physician_pct": 99.0,
+      "has_primary_physician_pct": 100.0,
       "dominant_health_plan": "Medicare"
     },
     "ai_attitudes": {
       "dominant_trust_level": "A little"
     },
     "digital_adoption": {
-      "high_digital_users_pct": 4.7
+      "high_digital_users_pct": 5.9
     },
-    "cluster_name": "Traditional Users"
+    "cluster_name": "Balanced Segment 5"
   },
-  "Cluster_4": {
-    "cluster_id": 4,
-    "size": 2573,
-    "percentage": 25.0,
+  "Cluster_5": {
+    "cluster_id": 5,
+    "size": 2378,
+    "percentage": 23.1,
     "demographics": {
-      "dominant_generation": "Millennial",
+      "dominant_generation": "Boomer",
       "dominant_gender": "Female",
-      "dominant_income": "Under $25,000",
-      "dominant_education": "High School",
-      "avg_has_children": 39.0
+      "dominant_income": "Over $100,000",
+      "dominant_education": "Graduated 4-year College/University",
+      "avg_has_children": 26.5
     },
     "healthcare": {
-      "has_primary_physician_pct": 100.0,
+      "has_primary_physician_pct": 98.8,
       "dominant_health_plan": "Commercially Insured (HMO, PPO, POS, FFS)"
     },
     "ai_attitudes": {
-      "dominant_trust_level": "Moderately"
+      "dominant_trust_level": "A little"
     },
     "digital_adoption": {
-      "high_digital_users_pct": 6.7
+      "high_digital_users_pct": 6.2
     },
-    "cluster_name": "Balanced Segment 5"
+    "cluster_name": "Traditional Users"
   }
 }
